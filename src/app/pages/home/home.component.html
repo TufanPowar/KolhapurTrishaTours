@@ -1,25 +1,51 @@
 <ng-container *ngIf="content$ | async as content">
-  <section class="hero">
+  <section class="hero" data-aos="fade-right">
     <h1>{{ content.hero.title }}</h1>
     <p>{{ content.hero.subtitle }}</p>
+
+    <form class="hero-search" [formGroup]="heroSearchForm" (ngSubmit)="onExploreNow()" novalidate>
+      <input
+        formControlName="destination"
+        [placeholder]="languageService.isMarathi() ? 'गंतव्य' : 'Destination'"
+        autocomplete="off"
+      />
+      <input formControlName="journeyDate" type="date" [placeholder]="''" />
+      <input formControlName="returnDate" type="date" [placeholder]="''" />
+      <input
+        formControlName="travelers"
+        type="number"
+        inputmode="numeric"
+        min="1"
+        max="50"
+        [placeholder]="languageService.isMarathi() ? 'प्रवासी' : 'Travelers'"
+      />
+      <button mat-flat-button color="primary" type="submit">{{ languageService.isMarathi() ? 'आता एक्सप्लोर करा' : 'Explore Now' }}</button>
+    </form>
+
     <div class="cta-row">
-      <a mat-flat-button color="primary" routerLink="/request-quotation">{{ content.hero.ctaQuote }}</a>
+      <a
+        mat-flat-button
+        color="primary"
+        routerLink="/request-quotation"
+      >{{ languageService.isMarathi() ? 'ट्रिप बुक करा' : 'Book Your Trip' }}</a>
       <a mat-stroked-button href="tel:+919579858666">{{ content.hero.ctaCall }}</a>
       <a mat-stroked-button href="https://wa.me/919579858666" target="_blank" rel="noreferrer">{{ content.hero.ctaWhatsapp }}</a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'आम्हालाच का निवडावे' : 'Why Choose Us' }}</h2>
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'आम्हालाच का निवडावे' : 'Why Choose Us' }}</h2>
     <div class="grid">
-      <mat-card *ngFor="let item of content.whyChooseUs" data-aos="fade-up">{{ item }}</mat-card>
+      <mat-card *ngFor="let item of content.whyChooseUs; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 60">
+        {{ item }}
+      </mat-card>
     </div>
   </section>
 
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'लोकप्रिय ठिकाणे' : 'Popular Destinations' }}</h2>
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'लोकप्रिय ठिकाणे' : 'Popular Destinations' }}</h2>
     <div class="grid">
-      <mat-card *ngFor="let destination of content.destinations" data-aos="zoom-in-up">
+      <mat-card *ngFor="let destination of content.destinations; let i = index" data-aos="zoom-in-up" [attr.data-aos-delay]="i * 70">
         <img
           [src]="destination.image"
           [alt]="destination.name + ' travel destination'"
@@ -32,43 +58,51 @@
     </div>
   </section>
 
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'कॅब प्रकार' : 'Cab Categories' }}</h2>
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'कॅब प्रकार' : 'Cab Categories' }}</h2>
     <div class="grid">
-      <mat-card *ngFor="let cab of content.cabCategories" data-aos="fade-up">{{ cab }}</mat-card>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'सेवा आढावा' : 'Services Overview' }}</h2>
-    <div class="grid">
-      <mat-card *ngFor="let service of content.servicesOverview" data-aos="fade-up">{{ service }}</mat-card>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'विश्वास निर्देशक' : 'Trust Indicators' }}</h2>
-    <div class="grid">
-      <mat-card *ngFor="let indicator of content.trustIndicators">{{ indicator }}</mat-card>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'नेहमी विचारले जाणारे प्रश्न' : 'FAQ' }}</h2>
-    <div class="grid">
-      <mat-card *ngFor="let faq of content.faqs">
-        <h3>{{ faq.question }}</h3>
-        <p>{{ faq.answer }}</p>
+      <mat-card *ngFor="let cab of content.cabCategories; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 60">
+        {{ cab }}
       </mat-card>
     </div>
   </section>
 
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'सेवा आढावा' : 'Services Overview' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let service of content.servicesOverview; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 55">
+        {{ service }}
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'विश्वास निर्देशक' : 'Trust Indicators' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let indicator of content.trustIndicators; let i = index" data-aos="fade-up" [attr.data-aos-delay]="i * 55">
+        {{ indicator }}
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'नेहमी विचारले जाणारे प्रश्न' : 'FAQ' }}</h2>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let faq of content.faqs; let i = index" [expanded]="i === 0" [attr.data-aos-delay]="i * 80">
+        <mat-expansion-panel-header>
+          <mat-panel-title>{{ faq.question }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{ faq.answer }}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </section>
+
   <section class="section emergency">{{ content.emergencyBanner }}</section>
 
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'गूगल रिव्यू' : 'Google Reviews' }}</h2>
-    <p>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'ग्राहक अभिप्राय पहा आणि तुमचा अनुभव शेअर करा.' : 'See customer feedback and share your experience after your trip.' }}</p>
-    <a href="https://maps.app.goo.gl/TFtSQp9g6WcRBVCF9" target="_blank" rel="noreferrer">{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'गूगल रिव्यू पहा' : 'View Google Reviews' }}</a>
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'गूगल रिव्यू' : 'Google Reviews' }}</h2>
+    <p>{{ languageService.isMarathi() ? 'ग्राहक अभिप्राय पहा आणि तुमचा अनुभव शेअर करा.' : 'See customer feedback and share your experience after your trip.' }}</p>
+    <a href="https://maps.app.goo.gl/TFtSQp9g6WcRBVCF9" target="_blank" rel="noreferrer">{{ languageService.isMarathi() ? 'गूगल रिव्यू पहा' : 'View Google Reviews' }}</a>
     <div class="qr-wrap">
       <img
         src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://maps.app.goo.gl/TFtSQp9g6WcRBVCF9"
@@ -78,12 +112,12 @@
     </div>
   </section>
 
-  <section class="section">
-    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'स्पर्धात्मक फायदे' : 'Competitor Advantage' }}</h2>
+  <section class="section" data-aos="fade-up">
+    <h2>{{ languageService.isMarathi() ? 'स्पर्धात्मक फायदे' : 'Competitor Advantage' }}</h2>
     <div class="grid">
-      <mat-card>Dedicated location pages for Kolhapur routes</mat-card>
-      <mat-card>Fresh SEO blogs targeting long-tail keywords</mat-card>
-      <mat-card>Fast mobile-first quote and WhatsApp conversion flow</mat-card>
+      <mat-card data-aos="fade-up">Dedicated location pages for Kolhapur routes</mat-card>
+      <mat-card data-aos="fade-up" data-aos-delay="80">Fresh SEO blogs targeting long-tail keywords</mat-card>
+      <mat-card data-aos="fade-up" data-aos-delay="160">Fast mobile-first quote and WhatsApp conversion flow</mat-card>
     </div>
   </section>
 </ng-container>

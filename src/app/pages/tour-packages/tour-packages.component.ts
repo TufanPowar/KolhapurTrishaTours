@@ -1,5 +1,6 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { Observable } from 'rxjs';
@@ -12,7 +13,7 @@ import { SeoService } from '../../core/services/seo.service';
   standalone: true,
   imports: [NgIf, NgFor, AsyncPipe, MatCardModule, MatButtonModule],
   template: `<section class="container" *ngIf="content$ | async as content">
-    <h1>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'टूर पॅकेजेस' : 'Tour Packages' }}</h1>
+    <h1>{{ languageService.isMarathi() ? 'टूर पॅकेजेस' : 'Tour Packages' }}</h1>
     <div class="grid">
       <mat-card *ngFor="let pkg of content.packages">
         <img [src]="pkg.image" [alt]="pkg.name" loading="lazy" />
@@ -28,7 +29,7 @@ import { SeoService } from '../../core/services/seo.service';
             target="_blank"
             rel="noreferrer"
           >
-            {{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'व्हॉट्सअॅप चौकशी' : 'WhatsApp Inquiry' }}
+            {{ languageService.isMarathi() ? 'व्हॉट्सअॅप चौकशी' : 'WhatsApp Inquiry' }}
           </a>
           <a
             mat-button
@@ -36,7 +37,7 @@ import { SeoService } from '../../core/services/seo.service';
             target="_blank"
             rel="noreferrer"
           >
-            {{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'शेअर' : 'Share' }}
+            {{ languageService.isMarathi() ? 'शेअर' : 'Share' }}
           </a>
         </div>
       </mat-card>
@@ -47,6 +48,7 @@ import { SeoService } from '../../core/services/seo.service';
   ]
 })
 export class TourPackagesComponent implements OnInit {
+  readonly languageService = inject(LanguageService);
   readonly content$: Observable<SiteContent>;
   constructor(private readonly contentService: ContentService, private readonly seoService: SeoService) {
     this.content$ = this.contentService.content;

@@ -19,6 +19,10 @@ export class LanguageService {
     this.setLanguage(this.language() === 'en' ? 'mr' : 'en');
   }
 
+  isMarathi(): boolean {
+    return this.language() === 'mr';
+  }
+
   private readLanguage(): SupportedLanguage {
     if (typeof localStorage === 'undefined') {
       return this.defaultLang;

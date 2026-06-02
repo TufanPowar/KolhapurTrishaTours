@@ -1,15 +1,15 @@
 {
-  "companyName": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस",
+  "companyName": "कोल्हापूर कोल्हापूर त्रिशा टूर्स",
   "tagLine": "कोल्हापूरहून प्रीमियम कॅब आणि टूर सेवा",
   "meta": {
-    "home": { "title": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस | कोल्हापूर कॅब व टूर", "description": "कोल्हापूरमधून विश्वासार्ह कॅब सेवा आणि टूर पॅकेजेस.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur" },
-    "about": { "title": "आमच्याबद्दल | त्रिशा टूर्स", "description": "आमचे ध्येय, दृष्टी आणि सेवा.", "keywords": "about trisha tours" },
-    "services": { "title": "सेवा | त्रिशा टूर्स", "description": "कॅब, टूर, कॉर्पोरेट आणि इव्हेंट ट्रान्सपोर्ट.", "keywords": "services kolhapur" },
-    "fleet": { "title": "फ्लीट | त्रिशा टूर्स", "description": "आमची वाहन श्रेणी पहा.", "keywords": "fleet kolhapur" },
-    "packages": { "title": "टूर पॅकेजेस | त्रिशा टूर्स", "description": "महाराष्ट्र, गोवा आणि धार्मिक पॅकेजेस.", "keywords": "tour packages kolhapur" },
-    "quotation": { "title": "कोटेशन विनंती | त्रिशा टूर्स", "description": "आपली प्रवास चौकशी पाठवा.", "keywords": "quotation request" },
-    "gallery": { "title": "गॅलरी | त्रिशा टूर्स", "description": "आमच्या टूर आणि वाहनांचे फोटो.", "keywords": "gallery travel" },
-    "contact": { "title": "संपर्क | त्रिशा टूर्स", "description": "बुकिंगसाठी संपर्क करा.", "keywords": "contact kolhapur travel" }
+    "home": { "title": "कोल्हापूर कोल्हापूर त्रिशा टूर्स | कोल्हापूर कॅब व टूर", "description": "कोल्हापूरमधून विश्वासार्ह कॅब सेवा आणि टूर पॅकेजेस.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur" },
+    "about": { "title": "आमच्याबद्दल | कोल्हापूर त्रिशा टूर्स", "description": "आमचे ध्येय, दृष्टी आणि सेवा.", "keywords": "about trisha tours" },
+    "services": { "title": "सेवा | कोल्हापूर त्रिशा टूर्स", "description": "कॅब, टूर, कॉर्पोरेट आणि इव्हेंट ट्रान्सपोर्ट.", "keywords": "services kolhapur" },
+    "fleet": { "title": "फ्लीट | कोल्हापूर त्रिशा टूर्स", "description": "आमची वाहन श्रेणी पहा.", "keywords": "fleet kolhapur" },
+    "packages": { "title": "टूर पॅकेजेस | कोल्हापूर त्रिशा टूर्स", "description": "महाराष्ट्र, गोवा आणि धार्मिक पॅकेजेस.", "keywords": "tour packages kolhapur" },
+    "quotation": { "title": "कोटेशन विनंती | कोल्हापूर त्रिशा टूर्स", "description": "आपली प्रवास चौकशी पाठवा.", "keywords": "quotation request" },
+    "gallery": { "title": "गॅलरी | कोल्हापूर त्रिशा टूर्स", "description": "आमच्या टूर आणि वाहनांचे फोटो.", "keywords": "gallery travel" },
+    "contact": { "title": "संपर्क | कोल्हापूर त्रिशा टूर्स", "description": "बुकिंगसाठी संपर्क करा.", "keywords": "contact kolhapur travel" }
   },
   "nav": [
     { "label": "मुख्यपृष्ठ", "path": "/" },
@@ -47,7 +47,7 @@
   "trustIndicators": ["प्रोफेशनल ड्रायव्हर्स", "स्वच्छ वाहने", "वेळेवर सेवा", "सुरक्षित प्रवास", "व्हेरिफाइड ड्रायव्हर्स"],
   "emergencyBanner": "24x7 आपत्कालीन प्रवास सहाय्य उपलब्ध",
   "about": {
-    "intro": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस ही कोल्हापूरमधील ग्राहक-केंद्रित ट्रॅव्हल सेवा आहे.",
+    "intro": "कोल्हापूर कोल्हापूर त्रिशा टूर्स ही कोल्हापूरमधील ग्राहक-केंद्रित ट्रॅव्हल सेवा आहे.",
     "mission": "ध्येय: परवडणारी आणि विश्वासार्ह सेवा देणे.",
     "vision": "दृष्टी: पश्चिम महाराष्ट्रातील सर्वात विश्वासू ट्रॅव्हल पार्टनर बनणे.",
     "experience": "अनुभव: वर्षानुवर्षे समाधानकारक प्रवास सेवा.",
@@ -74,7 +74,7 @@
     { "category": "कोल्हापूर पर्यटन", "image": "assets/images/gallery-kolhapur.webp", "title": "महालक्ष्मी मंदिर" },
     { "category": "वाहन", "image": "assets/images/gallery-vehicle.webp", "title": "स्वच्छ फ्लीट" },
     { "category": "ग्राहक टूर", "image": "assets/images/gallery-customer.webp", "title": "आनंदी कुटुंब टूर" },
-    { "category": "ऑफिस", "image": "assets/images/gallery-office.webp", "title": "त्रिशा टूर्स ऑफिस" }
+    { "category": "ऑफिस", "image": "assets/images/gallery-office.webp", "title": "कोल्हापूर त्रिशा टूर्स ऑफिस" }
   ],
   "social": { "facebook": "#", "instagram": "#", "youtube": "#", "googleBusiness": "#" },
   "contact": {

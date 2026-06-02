@@ -1,15 +1,15 @@
 {
-  "companyName": "Trisha Tours & Cab Services",
+  "companyName": "Kolhapur Trisha Tours",
   "tagLine": "Premium cab rentals and tour services from Kolhapur",
   "meta": {
-    "home": { "title": "Trisha Tours & Cab Services | Kolhapur Cab & Tours", "description": "Trusted cab service and tour packages from Kolhapur for local and all India trips.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur, Tour Packages Kolhapur, Maharashtra Tours, Car Rental Kolhapur" },
-    "about": { "title": "About Us | Trisha Tours & Cab Services", "description": "Learn about our mission, vision and customer-first travel services.", "keywords": "about travel agency kolhapur" },
-    "services": { "title": "Services | Trisha Tours & Cab Services", "description": "Cab rentals, tours, corporate and event transportation services.", "keywords": "cab rental kolhapur, tour services kolhapur" },
-    "fleet": { "title": "Fleet | Trisha Tours & Cab Services", "description": "Browse our clean, safe and comfortable vehicle fleet.", "keywords": "fleet kolhapur taxi, vehicles cab service" },
-    "packages": { "title": "Tour Packages | Trisha Tours & Cab Services", "description": "Discover curated Maharashtra, Goa and South India packages.", "keywords": "tour packages kolhapur" },
-    "quotation": { "title": "Request Quotation | Trisha Tours & Cab Services", "description": "Request your travel quotation in a few easy steps.", "keywords": "request quote cab kolhapur" },
-    "gallery": { "title": "Gallery | Trisha Tours & Cab Services", "description": "Explore destination, vehicle and customer tour photos.", "keywords": "travel gallery kolhapur" },
-    "contact": { "title": "Contact Us | Trisha Tours & Cab Services", "description": "Get in touch for bookings, tours and quick support.", "keywords": "contact cab service kolhapur" }
+    "home": { "title": "Kolhapur Trisha Tours | Kolhapur Cab & Tours", "description": "Trusted cab service and tour packages from Kolhapur for local and all India trips.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur, Tour Packages Kolhapur, Maharashtra Tours, Car Rental Kolhapur" },
+    "about": { "title": "About Us | Kolhapur Trisha Tours", "description": "Learn about our mission, vision and customer-first travel services.", "keywords": "about travel agency kolhapur" },
+    "services": { "title": "Services | Kolhapur Trisha Tours", "description": "Cab rentals, tours, corporate and event transportation services.", "keywords": "cab rental kolhapur, tour services kolhapur" },
+    "fleet": { "title": "Fleet | Kolhapur Trisha Tours", "description": "Browse our clean, safe and comfortable vehicle fleet.", "keywords": "fleet kolhapur taxi, vehicles cab service" },
+    "packages": { "title": "Tour Packages | Kolhapur Trisha Tours", "description": "Discover curated Maharashtra, Goa and South India packages.", "keywords": "tour packages kolhapur" },
+    "quotation": { "title": "Request Quotation | Kolhapur Trisha Tours", "description": "Request your travel quotation in a few easy steps.", "keywords": "request quote cab kolhapur" },
+    "gallery": { "title": "Gallery | Kolhapur Trisha Tours", "description": "Explore destination, vehicle and customer tour photos.", "keywords": "travel gallery kolhapur" },
+    "contact": { "title": "Contact Us | Kolhapur Trisha Tours", "description": "Get in touch for bookings, tours and quick support.", "keywords": "contact cab service kolhapur" }
   },
   "nav": [
     { "label": "Home", "path": "/" },
@@ -54,7 +54,7 @@
   "trustIndicators": ["Professional Drivers", "Sanitized Vehicles", "On-Time Service", "Safe Travel", "Verified Drivers"],
   "emergencyBanner": "24x7 Emergency Travel Support Available",
   "about": {
-    "intro": "Trisha Tours & Cab Services is a customer-focused travel agency based in Kolhapur.",
+    "intro": "Kolhapur Trisha Tours is a customer-focused travel agency based in Kolhapur.",
     "mission": "Mission: Deliver reliable and affordable travel for families and businesses.",
     "vision": "Vision: Become the most trusted travel partner in Western Maharashtra.",
     "experience": "Years of Experience: Delivering smooth journeys with local expertise.",

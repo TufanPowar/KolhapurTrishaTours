@@ -12,15 +12,39 @@
     title="Google Map"
   ></iframe>
   <p>
-    <a href="https://maps.app.goo.gl/XmHjXddRqvpPwvui8" target="_blank" rel="noreferrer">{{ languageService.language() === 'mr' ? 'गूगल मॅपवर लोकेशन उघडा' : 'Open Real Location on Google Maps' }}</a>
+    <a href="https://maps.app.goo.gl/XmHjXddRqvpPwvui8" target="_blank" rel="noreferrer">{{
+      languageService.language() === 'mr' ? 'गूगल मॅपवर लोकेशन उघडा' : 'Open Real Location on Google Maps'
+    }}</a>
   </p>
 
-  <form class="grid" [formGroup]="form" (ngSubmit)="submit()">
-    <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'नाव' : 'Name' }}</mat-label><input matInput formControlName="name" /></mat-form-field>
-    <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'मोबाईल' : 'Mobile' }}</mat-label><input matInput formControlName="mobile" /></mat-form-field>
-    <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'ईमेल' : 'Email' }}</mat-label><input matInput formControlName="email" /></mat-form-field>
-    <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'संदेश' : 'Message' }}</mat-label><textarea matInput formControlName="message"></textarea></mat-form-field>
-    <input style="display:none" formControlName="honeypot" />
-    <button mat-flat-button color="primary" type="submit">{{ languageService.language() === 'mr' ? 'संदेश पाठवा' : 'Send Message' }}</button>
+  <form class="grid" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <mat-form-field>
+      <mat-label>{{ languageService.language() === 'mr' ? 'नाव' : 'Name' }}</mat-label>
+      <input matInput formControlName="name" autocomplete="name" />
+      <mat-error *ngIf="formError(form.get('name'), 'name')">{{ formError(form.get('name'), 'name') }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ languageService.language() === 'mr' ? 'मोबाईल' : 'Mobile' }}</mat-label>
+      <input matInput formControlName="mobile" type="tel" inputmode="numeric" maxlength="10" (input)="onMobileInput($event)" />
+      <mat-error *ngIf="formError(form.get('mobile'), 'mobile')">{{ formError(form.get('mobile'), 'mobile') }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ languageService.language() === 'mr' ? 'ईमेल' : 'Email' }}</mat-label>
+      <input matInput formControlName="email" type="email" autocomplete="email" />
+      <mat-error *ngIf="formError(form.get('email'), 'email')">{{ formError(form.get('email'), 'email') }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full">
+      <mat-label>{{ languageService.language() === 'mr' ? 'संदेश' : 'Message' }}</mat-label>
+      <textarea matInput formControlName="message" rows="4"></textarea>
+      <mat-error *ngIf="formError(form.get('message'), 'message')">{{ formError(form.get('message'), 'message') }}</mat-error>
+    </mat-form-field>
+
+    <input class="hidden" formControlName="honeypot" tabindex="-1" autocomplete="off" />
+    <button mat-flat-button color="primary" type="submit">
+      {{ languageService.language() === 'mr' ? 'संदेश पाठवा' : 'Send Message' }}
+    </button>
   </form>
 </section>

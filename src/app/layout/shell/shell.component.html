@@ -1,22 +1,72 @@
 <ng-container *ngIf="content() as content">
   <mat-toolbar class="topbar">
-    <a class="brand" routerLink="/">{{ content.companyName }}</a>
-    <nav>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      (click)="toggleMobileMenu()"
+      *ngIf="!mobileMenuOpen"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button class="menu-toggle" type="button" aria-label="Close menu" (click)="closeMobileMenu()" *ngIf="mobileMenuOpen">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <a class="brand" routerLink="/" (click)="closeMobileMenu()">{{ content.companyName }}</a>
+
+    <nav class="desktop-nav">
       <a *ngFor="let nav of content.nav" [routerLink]="nav.path" routerLinkActive="active">{{ nav.label }}</a>
     </nav>
-    <button mat-stroked-button type="button" (click)="languageService.toggleLanguage()">
+
+    <button mat-stroked-button type="button" class="lang-btn" (click)="languageService.toggleLanguage()">
       {{ languageService.language() === 'en' ? 'मराठी' : 'English' }}
     </button>
   </mat-toolbar>
 
-  <section class="sticky-inquiry">
-    <span>{{ languageService.language() === 'mr' ? 'प्रवासाची योजना? त्वरित कोटेशन घ्या' : 'Planning a Trip? Get Instant Quote' }}</span>
-    <form [formGroup]="quickLeadForm" (ngSubmit)="submitQuickLead()">
-      <input [placeholder]="languageService.language() === 'mr' ? 'नाव' : 'Name'" formControlName="name" />
-      <input [placeholder]="languageService.language() === 'mr' ? 'मोबाईल नंबर' : 'Mobile Number'" formControlName="mobile" />
+  <div class="mobile-backdrop" *ngIf="mobileMenuOpen" (click)="closeMobileMenu()"></div>
+  <nav class="mobile-nav" [class.open]="mobileMenuOpen" aria-label="Mobile navigation">
+    <a *ngFor="let nav of content.nav" [routerLink]="nav.path" routerLinkActive="active" (click)="closeMobileMenu()">
+      {{ nav.label }}
+    </a>
+  </nav>
+
+  <section class="sticky-inquiry" [class.collapsed]="inquiryCollapsed">
+    <div class="inquiry-head">
+      <span class="inquiry-title">{{
+        languageService.language() === 'mr' ? 'त्वरित कोटेशन' : 'Quick Quote'
+      }}</span>
+      <button type="button" class="inquiry-toggle" (click)="toggleInquiry()" [attr.aria-expanded]="!inquiryCollapsed">
+        {{ inquiryCollapsed ? (languageService.language() === 'mr' ? 'उघडा' : 'Open') : languageService.language() === 'mr' ? 'बंद' : 'Close' }}
+      </button>
+    </div>
+
+    <form class="inquiry-form" [formGroup]="quickLeadForm" (ngSubmit)="submitQuickLead()" *ngIf="!inquiryCollapsed">
+      <input
+        [placeholder]="languageService.language() === 'mr' ? 'नाव' : 'Name'"
+        formControlName="name"
+        autocomplete="name"
+      />
+      <input
+        [placeholder]="languageService.language() === 'mr' ? 'मोबाईल (10 अंक)' : 'Mobile (10 digits)'"
+        formControlName="mobile"
+        type="tel"
+        inputmode="numeric"
+        maxlength="10"
+        autocomplete="tel"
+        (input)="onMobileInput($event)"
+      />
       <button mat-flat-button color="primary" type="submit">{{ languageService.language() === 'mr' ? 'सबमिट' : 'Submit' }}</button>
     </form>
-    <small *ngIf="callbackMessage">{{ callbackMessage }}</small>
+
+    <div class="inquiry-errors" *ngIf="!inquiryCollapsed && quickLeadForm.touched && quickLeadForm.invalid">
+      <small *ngIf="formError(quickLeadForm.get('name'), 'name')">{{ formError(quickLeadForm.get('name'), 'name') }}</small>
+      <small *ngIf="formError(quickLeadForm.get('mobile'), 'mobile')">{{
+        formError(quickLeadForm.get('mobile'), 'mobile')
+      }}</small>
+    </div>
+
+    <small class="inquiry-success" *ngIf="callbackMessage">{{ callbackMessage }}</small>
   </section>
 
   <main class="main-content">
@@ -38,11 +88,16 @@
 
   <a class="floating call" href="tel:+919579858666" aria-label="Call now" (click)="trackClick('call_click')">
     <mat-icon>call</mat-icon>
-    <span>{{ languageService.language() === 'mr' ? 'कॉल' : 'Call' }}</span>
+    <span class="floating-label">{{ languageService.language() === 'mr' ? 'कॉल' : 'Call' }}</span>
   </a>
-  <a class="floating quote" href="/request-quotation" aria-label="Get quote" (click)="trackClick('quote_click')">
+  <a
+    class="floating quote"
+    routerLink="/request-quotation"
+    aria-label="Get quote"
+    (click)="trackClick('quote_click'); closeMobileMenu()"
+  >
     <mat-icon>description</mat-icon>
-    <span>{{ languageService.language() === 'mr' ? 'कोटेशन' : 'Quote' }}</span>
+    <span class="floating-label">{{ languageService.language() === 'mr' ? 'कोटेशन' : 'Quote' }}</span>
   </a>
   <a
     class="floating whatsapp"
@@ -53,16 +108,28 @@
     (click)="trackClick('whatsapp_click')"
   >
     <mat-icon>chat</mat-icon>
-    <span>WhatsApp</span>
+    <span class="floating-label">WhatsApp</span>
   </a>
-  <a class="floating share" href="https://www.facebook.com/sharer/sharer.php?u=https://trishatourskolhapur.com" target="_blank" rel="noreferrer" (click)="trackClick('share_click')">
+  <a
+    class="floating share"
+    href="https://www.facebook.com/sharer/sharer.php?u=https://kolhapurtrishatours.com"
+    target="_blank"
+    rel="noreferrer"
+    (click)="trackClick('share_click')"
+  >
     <mat-icon>share</mat-icon>
-    <span>{{ languageService.language() === 'mr' ? 'शेअर' : 'Share' }}</span>
+    <span class="floating-label">{{ languageService.language() === 'mr' ? 'शेअर' : 'Share' }}</span>
   </a>
 
   <div class="whatsapp-popup" *ngIf="showWhatsappPopup">
-    <button type="button" class="close-btn" (click)="closeWhatsappPopup()" aria-label="Close popup">x</button>
-    <p>{{ languageService.language() === 'mr' ? 'ट्रिप प्लॅनिंगमध्ये मदत हवी आहे? व्हॉट्सअॅपवर चॅट करा.' : 'Need help planning your trip? Chat with us on WhatsApp.' }}</p>
-    <a [href]="'https://wa.me/919579858666?text=' + whatsappMessage" target="_blank" rel="noreferrer">{{ languageService.language() === 'mr' ? 'आत्ता चॅट करा' : 'Chat Now' }}</a>
+    <button type="button" class="close-btn" (click)="closeWhatsappPopup()" aria-label="Close popup">×</button>
+    <p>{{
+      languageService.language() === 'mr'
+        ? 'ट्रिप प्लॅनिंगमध्ये मदत हवी आहे? व्हॉट्सअॅपवर चॅट करा.'
+        : 'Need help planning your trip? Chat with us on WhatsApp.'
+    }}</p>
+    <a [href]="'https://wa.me/919579858666?text=' + whatsappMessage" target="_blank" rel="noreferrer">{{
+      languageService.language() === 'mr' ? 'आत्ता चॅट करा' : 'Chat Now'
+    }}</a>
   </div>
 </ng-container>

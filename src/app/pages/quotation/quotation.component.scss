@@ -1,5 +1,21 @@
 .container {
   padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  button[type='submit'] {
+    width: 100%;
+  }
 }
 
 .grid {

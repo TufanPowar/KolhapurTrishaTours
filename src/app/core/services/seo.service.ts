@@ -25,7 +25,7 @@ export class SeoService {
       {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        name: 'Trisha Tours & Cab Services',
+        name: 'Kolhapur Trisha Tours',
         areaServed: 'Kolhapur, Maharashtra',
         telephone: '+919579858666',
         url: absoluteUrl
@@ -33,14 +33,14 @@ export class SeoService {
       {
         '@context': 'https://schema.org',
         '@type': 'TravelAgency',
-        name: 'Trisha Tours & Cab Services',
+        name: 'Kolhapur Trisha Tours',
         serviceType: 'Cab Rental and Tour Packages',
         url: absoluteUrl
       },
       {
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: 'Trisha Tours & Cab Services',
+        name: 'Kolhapur Trisha Tours',
         url: absoluteUrl
       }
     ]);
