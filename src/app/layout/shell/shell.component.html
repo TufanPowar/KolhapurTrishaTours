@@ -1,0 +1,68 @@
+<ng-container *ngIf="content() as content">
+  <mat-toolbar class="topbar">
+    <a class="brand" routerLink="/">{{ content.companyName }}</a>
+    <nav>
+      <a *ngFor="let nav of content.nav" [routerLink]="nav.path" routerLinkActive="active">{{ nav.label }}</a>
+    </nav>
+    <button mat-stroked-button type="button" (click)="languageService.toggleLanguage()">
+      {{ languageService.language() === 'en' ? 'मराठी' : 'English' }}
+    </button>
+  </mat-toolbar>
+
+  <section class="sticky-inquiry">
+    <span>{{ languageService.language() === 'mr' ? 'प्रवासाची योजना? त्वरित कोटेशन घ्या' : 'Planning a Trip? Get Instant Quote' }}</span>
+    <form [formGroup]="quickLeadForm" (ngSubmit)="submitQuickLead()">
+      <input [placeholder]="languageService.language() === 'mr' ? 'नाव' : 'Name'" formControlName="name" />
+      <input [placeholder]="languageService.language() === 'mr' ? 'मोबाईल नंबर' : 'Mobile Number'" formControlName="mobile" />
+      <button mat-flat-button color="primary" type="submit">{{ languageService.language() === 'mr' ? 'सबमिट' : 'Submit' }}</button>
+    </form>
+    <small *ngIf="callbackMessage">{{ callbackMessage }}</small>
+  </section>
+
+  <main class="main-content">
+    <ng-content />
+  </main>
+
+  <section class="install-banner" *ngIf="showInstallPrompt">
+    <span>{{ languageService.language() === 'mr' ? 'मोबाईल अॅप म्हणून इन्स्टॉल करा' : 'Install this website as an app' }}</span>
+    <button mat-flat-button color="primary" type="button" (click)="installApp()">
+      {{ languageService.language() === 'mr' ? 'इन्स्टॉल' : 'Install' }}
+    </button>
+  </section>
+
+  <footer class="footer">
+    <div>{{ content.companyName }} - {{ content.tagLine }}</div>
+    <div>{{ content.contact.address }}</div>
+    <div>{{ content.contact.phonePrimary }} | {{ content.contact.phoneSecondary }}</div>
+  </footer>
+
+  <a class="floating call" href="tel:+919579858666" aria-label="Call now" (click)="trackClick('call_click')">
+    <mat-icon>call</mat-icon>
+    <span>{{ languageService.language() === 'mr' ? 'कॉल' : 'Call' }}</span>
+  </a>
+  <a class="floating quote" href="/request-quotation" aria-label="Get quote" (click)="trackClick('quote_click')">
+    <mat-icon>description</mat-icon>
+    <span>{{ languageService.language() === 'mr' ? 'कोटेशन' : 'Quote' }}</span>
+  </a>
+  <a
+    class="floating whatsapp"
+    [href]="'https://wa.me/919579858666?text=' + whatsappMessage"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="WhatsApp inquiry"
+    (click)="trackClick('whatsapp_click')"
+  >
+    <mat-icon>chat</mat-icon>
+    <span>WhatsApp</span>
+  </a>
+  <a class="floating share" href="https://www.facebook.com/sharer/sharer.php?u=https://trishatourskolhapur.com" target="_blank" rel="noreferrer" (click)="trackClick('share_click')">
+    <mat-icon>share</mat-icon>
+    <span>{{ languageService.language() === 'mr' ? 'शेअर' : 'Share' }}</span>
+  </a>
+
+  <div class="whatsapp-popup" *ngIf="showWhatsappPopup">
+    <button type="button" class="close-btn" (click)="closeWhatsappPopup()" aria-label="Close popup">x</button>
+    <p>{{ languageService.language() === 'mr' ? 'ट्रिप प्लॅनिंगमध्ये मदत हवी आहे? व्हॉट्सअॅपवर चॅट करा.' : 'Need help planning your trip? Chat with us on WhatsApp.' }}</p>
+    <a [href]="'https://wa.me/919579858666?text=' + whatsappMessage" target="_blank" rel="noreferrer">{{ languageService.language() === 'mr' ? 'आत्ता चॅट करा' : 'Chat Now' }}</a>
+  </div>
+</ng-container>

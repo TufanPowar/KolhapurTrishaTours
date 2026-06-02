@@ -1,0 +1,83 @@
+<ng-container *ngIf="content$ | async as content">
+  <section class="hero">
+    <h1>{{ content.hero.title }}</h1>
+    <p>{{ content.hero.subtitle }}</p>
+    <div class="cta-row">
+      <a mat-flat-button color="primary" routerLink="/request-quotation">{{ content.hero.ctaQuote }}</a>
+      <a mat-stroked-button href="tel:+919579858666">{{ content.hero.ctaCall }}</a>
+      <a mat-stroked-button href="https://wa.me/919579858666" target="_blank" rel="noreferrer">{{ content.hero.ctaWhatsapp }}</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'आम्हालाच का निवडावे' : 'Why Choose Us' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let item of content.whyChooseUs" data-aos="fade-up">{{ item }}</mat-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'लोकप्रिय ठिकाणे' : 'Popular Destinations' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let destination of content.destinations" data-aos="zoom-in-up">
+        <img [src]="destination.image" [alt]="destination.name" loading="lazy" />
+        <h3>{{ destination.name }}</h3>
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'कॅब प्रकार' : 'Cab Categories' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let cab of content.cabCategories" data-aos="fade-up">{{ cab }}</mat-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'सेवा आढावा' : 'Services Overview' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let service of content.servicesOverview" data-aos="fade-up">{{ service }}</mat-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'विश्वास निर्देशक' : 'Trust Indicators' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let indicator of content.trustIndicators">{{ indicator }}</mat-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'नेहमी विचारले जाणारे प्रश्न' : 'FAQ' }}</h2>
+    <div class="grid">
+      <mat-card *ngFor="let faq of content.faqs">
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="section emergency">{{ content.emergencyBanner }}</section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'गूगल रिव्यू' : 'Google Reviews' }}</h2>
+    <p>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'ग्राहक अभिप्राय पहा आणि तुमचा अनुभव शेअर करा.' : 'See customer feedback and share your experience after your trip.' }}</p>
+    <a href="https://maps.app.goo.gl/TFtSQp9g6WcRBVCF9" target="_blank" rel="noreferrer">{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'गूगल रिव्यू पहा' : 'View Google Reviews' }}</a>
+    <div class="qr-wrap">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://maps.app.goo.gl/TFtSQp9g6WcRBVCF9"
+        alt="Google Review QR"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'स्पर्धात्मक फायदे' : 'Competitor Advantage' }}</h2>
+    <div class="grid">
+      <mat-card>Dedicated location pages for Kolhapur routes</mat-card>
+      <mat-card>Fresh SEO blogs targeting long-tail keywords</mat-card>
+      <mat-card>Fast mobile-first quote and WhatsApp conversion flow</mat-card>
+    </div>
+  </section>
+</ng-container>

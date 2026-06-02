@@ -1,0 +1,21 @@
+<section class="container">
+  <h1>{{ languageService.language() === 'mr' ? 'कोटेशन विनंती' : 'Request Quotation' }}</h1>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="grid">
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'पूर्ण नाव' : 'Full Name' }}</mat-label><input matInput formControlName="fullName" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'मोबाईल नंबर' : 'Mobile Number' }}</mat-label><input matInput formControlName="mobile" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'ईमेल' : 'Email' }}</mat-label><input matInput formControlName="email" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'पिकअप ठिकाण' : 'Pickup Location' }}</mat-label><input matInput formControlName="pickup" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'गंतव्य' : 'Destination' }}</mat-label><input matInput formControlName="destination" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'दिवसांची संख्या' : 'Number of Days' }}</mat-label><input matInput formControlName="days" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'प्रवास तारीख' : 'Journey Date' }}</mat-label><input matInput type="date" formControlName="journeyDate" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'परतीची तारीख' : 'Return Date' }}</mat-label><input matInput type="date" formControlName="returnDate" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'प्रौढ' : 'Adults' }}</mat-label><input matInput formControlName="adults" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'मुले' : 'Children' }}</mat-label><input matInput formControlName="children" /></mat-form-field>
+      <mat-form-field><mat-label>{{ languageService.language() === 'mr' ? 'वाहन प्रकार' : 'Vehicle Type' }}</mat-label><input matInput formControlName="vehicleType" /></mat-form-field>
+      <mat-form-field class="full"><mat-label>{{ languageService.language() === 'mr' ? 'विशेष आवश्यकता' : 'Special Requirements' }}</mat-label><textarea matInput formControlName="specialRequirements"></textarea></mat-form-field>
+      <input class="hidden" formControlName="honeypot" />
+    </div>
+    <button mat-flat-button color="primary" type="submit">{{ languageService.language() === 'mr' ? 'चौकशी पाठवा' : 'Submit Inquiry' }}</button>
+  </form>
+</section>

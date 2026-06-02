@@ -1,0 +1,100 @@
+{
+  "companyName": "Trisha Tours & Cab Services",
+  "tagLine": "Premium cab rentals and tour services from Kolhapur",
+  "meta": {
+    "home": { "title": "Trisha Tours & Cab Services | Kolhapur Cab & Tours", "description": "Trusted cab service and tour packages from Kolhapur for local and all India trips.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur, Tour Packages Kolhapur, Maharashtra Tours, Car Rental Kolhapur" },
+    "about": { "title": "About Us | Trisha Tours & Cab Services", "description": "Learn about our mission, vision and customer-first travel services.", "keywords": "about travel agency kolhapur" },
+    "services": { "title": "Services | Trisha Tours & Cab Services", "description": "Cab rentals, tours, corporate and event transportation services.", "keywords": "cab rental kolhapur, tour services kolhapur" },
+    "fleet": { "title": "Fleet | Trisha Tours & Cab Services", "description": "Browse our clean, safe and comfortable vehicle fleet.", "keywords": "fleet kolhapur taxi, vehicles cab service" },
+    "packages": { "title": "Tour Packages | Trisha Tours & Cab Services", "description": "Discover curated Maharashtra, Goa and South India packages.", "keywords": "tour packages kolhapur" },
+    "quotation": { "title": "Request Quotation | Trisha Tours & Cab Services", "description": "Request your travel quotation in a few easy steps.", "keywords": "request quote cab kolhapur" },
+    "gallery": { "title": "Gallery | Trisha Tours & Cab Services", "description": "Explore destination, vehicle and customer tour photos.", "keywords": "travel gallery kolhapur" },
+    "contact": { "title": "Contact Us | Trisha Tours & Cab Services", "description": "Get in touch for bookings, tours and quick support.", "keywords": "contact cab service kolhapur" }
+  },
+  "nav": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Services", "path": "/services" },
+    { "label": "Fleet", "path": "/fleet" },
+    { "label": "Packages", "path": "/tour-packages" },
+    { "label": "Quotation", "path": "/request-quotation" },
+    { "label": "Gallery", "path": "/gallery" },
+    { "label": "Contact", "path": "/contact" },
+    { "label": "Blog", "path": "/blog" }
+  ],
+  "hero": { "title": "Your Trusted Travel Partner in Kolhapur", "subtitle": "Cab rentals, family tours and all India tour packages with professional support.", "ctaQuote": "Get Quote", "ctaCall": "Call Now", "ctaWhatsapp": "WhatsApp Inquiry" },
+  "whyChooseUs": ["Trusted Service", "Professional Drivers", "Affordable Pricing", "24x7 Support", "Safe & Comfortable Travel", "All India Tours"],
+  "destinations": [
+    { "name": "Kolhapur", "image": "https://images.unsplash.com/photo-1572785262052-c4f9c5a3ef5f?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Mahabaleshwar", "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Goa", "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Pune", "image": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Mumbai", "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Konkan", "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Ganpatipule", "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "Tarkarli", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" }
+  ],
+  "cabCategories": [
+    "5 Seater AC Cab",
+    "7 Seater SUV",
+    "10 Seater Vehicle",
+    "12 Seater Traveller Van",
+    "17 Seater Traveller Van",
+    "Luxury Premium Cars"
+  ],
+  "servicesOverview": ["Airport Pickup & Drop", "Railway Station Pickup", "Local Sightseeing", "Outstation Trips", "Corporate Travel", "Family Tours", "Religious Tours", "Wedding Transportation", "School/College Trips", "Tourist Packages"],
+  "testimonials": [{ "name": "Priya Patil", "comment": "Very punctual and polite driver service." }, { "name": "Rohit Jadhav", "comment": "Comfortable Goa tour package for family." }, { "name": "Neha Kulkarni", "comment": "Transparent pricing and smooth trip planning." }],
+  "faqs": [
+    { "question": "How to book a cab?", "answer": "Call, WhatsApp, or submit quotation form." },
+    { "question": "Do you provide outstation trips?", "answer": "Yes, we provide all India outstation services." },
+    { "question": "Do you provide drivers?", "answer": "Yes, all bookings include professional drivers." },
+    { "question": "Which cities do you cover?", "answer": "Kolhapur and major cities across India." },
+    { "question": "How can I request a quote?", "answer": "Use the request quotation page or WhatsApp us." }
+  ],
+  "trustIndicators": ["Professional Drivers", "Sanitized Vehicles", "On-Time Service", "Safe Travel", "Verified Drivers"],
+  "emergencyBanner": "24x7 Emergency Travel Support Available",
+  "about": {
+    "intro": "Trisha Tours & Cab Services is a customer-focused travel agency based in Kolhapur.",
+    "mission": "Mission: Deliver reliable and affordable travel for families and businesses.",
+    "vision": "Vision: Become the most trusted travel partner in Western Maharashtra.",
+    "experience": "Years of Experience: Delivering smooth journeys with local expertise.",
+    "areas": "Service Areas: Kolhapur, Maharashtra and all India tour routes.",
+    "commitment": "Customer Commitment: Safe travel, clean vehicles and responsive support."
+  },
+  "services": {
+    "cabRental": ["Hourly Rental", "Daily Rental", "Weekly Rental"],
+    "tours": ["Maharashtra Tours", "Goa Tours", "South India Tours", "North India Tours", "Religious Tours"],
+    "corporate": ["Employee Transportation", "Business Travel"],
+    "eventTransportation": ["Marriage Functions", "Family Events", "Group Travel"]
+  },
+  "vehicles": [
+    { "name": "5 Seater Sedan", "image": "https://images.unsplash.com/photo-1549921296-3a6b0f7f9af3?auto=format&fit=crop&w=1200&q=80", "seating": "5 Seater", "ac": "AC", "luggage": "2 Bags", "features": ["Comfort Seats", "Music System", "Clean Interiors"] },
+    { "name": "7 Seater SUV", "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80", "seating": "7 Seater", "ac": "AC", "luggage": "4 Bags", "features": ["Spacious Cabin", "Strong Suspension", "Tour Ready"] },
+    { "name": "10 Seater Cab", "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80", "seating": "10 Seater", "ac": "AC", "luggage": "Medium", "features": ["Group Friendly", "Comfort Ride", "Perfect for Family Trips"] },
+    { "name": "12 Seater Traveller Van", "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80", "seating": "12 Seater", "ac": "AC", "luggage": "Large", "features": ["Pushback Seats", "Long Distance Comfort", "Airy Cabin"] },
+    { "name": "17 Seater Traveller Van", "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80", "seating": "17 Seater", "ac": "AC", "luggage": "Large", "features": ["Best for Groups", "Extra Leg Space", "Tour Ready"] }
+  ],
+  "packages": [
+    { "category": "Maharashtra Tours", "name": "Kolhapur-Mahabaleshwar Escape", "duration": "3 Days / 2 Nights", "locations": "Kolhapur, Mahabaleshwar, Panchgani", "inclusions": ["Cab", "Driver Allowance", "Toll & Parking"], "image": "assets/images/package-maharashtra.webp" },
+    { "category": "Goa Tours", "name": "Goa Coastal Holiday", "duration": "4 Days / 3 Nights", "locations": "North Goa, South Goa", "inclusions": ["Pickup & Drop", "Sightseeing", "Support"], "image": "assets/images/package-goa.webp" },
+    { "category": "Religious Tours", "name": "Spiritual Maharashtra Circuit", "duration": "5 Days / 4 Nights", "locations": "Kolhapur, Pandharpur, Tuljapur", "inclusions": ["Cab", "Route Planning", "Driver"], "image": "assets/images/package-religious.webp" },
+    { "category": "Goa Tours", "name": "Kolhapur to Goa Family Tour", "duration": "3 Days / 2 Nights", "locations": "Kolhapur, North Goa, South Goa", "inclusions": ["Cab", "Tour Support", "Sightseeing"], "image": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80" },
+    { "category": "South India Tours", "name": "Coastal Karnataka Explorer", "duration": "6 Days / 5 Nights", "locations": "Gokarna, Udupi, Murudeshwar", "inclusions": ["Cab", "Trip Planning", "Driver"], "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" },
+    { "category": "Maharashtra Tours", "name": "Konkan Beach Retreat", "duration": "4 Days / 3 Nights", "locations": "Ganpatipule, Ratnagiri, Tarkarli", "inclusions": ["Cab", "Route Plan", "Driver Allowance"], "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" },
+    { "category": "Customized Tours", "name": "Custom Family Group Package", "duration": "As per plan", "locations": "Flexible Destinations", "inclusions": ["Custom Itinerary", "Cab Options", "Dedicated Support"], "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80" }
+  ],
+  "gallery": [
+    { "category": "Kolhapur Tourism", "image": "assets/images/gallery-kolhapur.webp", "title": "Mahalaxmi Temple View" },
+    { "category": "Vehicle", "image": "assets/images/gallery-vehicle.webp", "title": "Well Maintained Fleet" },
+    { "category": "Customer Tour", "image": "assets/images/gallery-customer.webp", "title": "Happy Family Tour" },
+    { "category": "Office", "image": "assets/images/gallery-office.webp", "title": "Trisha Tours Office" }
+  ],
+  "social": { "facebook": "#", "instagram": "#", "youtube": "#", "googleBusiness": "#" },
+  "contact": {
+    "phonePrimary": "+91 9579858666",
+    "phoneSecondary": "+91 8698863927",
+    "whatsapp": "+91 9579858666",
+    "email": "info@trishatours.com",
+    "address": "Kolhapur, Maharashtra, India"
+  }
+}
