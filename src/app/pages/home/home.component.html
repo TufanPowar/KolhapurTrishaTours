@@ -3,33 +3,14 @@
     <h1>{{ content.hero.title }}</h1>
     <p>{{ content.hero.subtitle }}</p>
 
-    <form class="hero-search" [formGroup]="heroSearchForm" (ngSubmit)="onExploreNow()" novalidate>
-      <input
-        formControlName="destination"
-        [placeholder]="languageService.isMarathi() ? 'गंतव्य' : 'Destination'"
-        autocomplete="off"
-      />
-      <input formControlName="journeyDate" type="date" [placeholder]="''" />
-      <input formControlName="returnDate" type="date" [placeholder]="''" />
-      <input
-        formControlName="travelers"
-        type="number"
-        inputmode="numeric"
-        min="1"
-        max="50"
-        [placeholder]="languageService.isMarathi() ? 'प्रवासी' : 'Travelers'"
-      />
-      <button mat-flat-button color="primary" type="submit">{{ languageService.isMarathi() ? 'आता एक्सप्लोर करा' : 'Explore Now' }}</button>
-    </form>
-
     <div class="cta-row">
-      <a
-        mat-flat-button
-        color="primary"
-        routerLink="/request-quotation"
-      >{{ languageService.isMarathi() ? 'ट्रिप बुक करा' : 'Book Your Trip' }}</a>
-      <a mat-stroked-button href="tel:+919579858666">{{ content.hero.ctaCall }}</a>
-      <a mat-stroked-button href="https://wa.me/919579858666" target="_blank" rel="noreferrer">{{ content.hero.ctaWhatsapp }}</a>
+      <a mat-flat-button color="primary" class="cta-book" routerLink="/request-quotation">{{
+        languageService.isMarathi() ? 'ट्रिप बुक करा' : 'Book Your Trip'
+      }}</a>
+      <a class="cta-call" href="tel:+919579858666">{{ content.hero.ctaCall }}</a>
+      <a class="cta-whatsapp" href="https://wa.me/919579858666" target="_blank" rel="noreferrer">{{
+        content.hero.ctaWhatsapp
+      }}</a>
     </div>
   </section>
 

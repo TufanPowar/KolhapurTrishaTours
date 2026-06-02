@@ -1,0 +1,46 @@
+<section class="container" *ngIf="content$ | async as content">
+  <h1>{{ languageService.isMarathi() ? 'टूर पॅकेजेस' : 'Tour Packages' }}</h1>
+  <p class="intro">
+    {{
+      languageService.isMarathi()
+        ? 'प्रत्येक पॅकेजसाठी योग्य वाहन आणि त्वरित कोटेशन मिळवा.'
+        : 'Choose a package with the right vehicle type and get an instant quote.'
+    }}
+  </p>
+
+  <div class="grid">
+    <mat-card class="package-card" *ngFor="let pkg of content.packages">
+      <div class="package-image-wrap">
+        <img class="package-image" [src]="pkg.image" [alt]="pkg.name" loading="lazy" />
+        <span class="category-badge">{{ pkg.category }}</span>
+      </div>
+
+      <div class="vehicle-row">
+        <img class="vehicle-thumb" [src]="pkg.vehicleImage" [alt]="pkg.vehicleType" loading="lazy" />
+        <div>
+          <p class="vehicle-label">{{ languageService.isMarathi() ? 'वाहन' : 'Vehicle' }}</p>
+          <strong>{{ pkg.vehicleType }}</strong>
+        </div>
+      </div>
+
+      <h3>{{ pkg.name }}</h3>
+      <p class="meta">{{ pkg.duration }}</p>
+      <p class="locations">{{ pkg.locations }}</p>
+      <ul>
+        <li *ngFor="let inc of pkg.inclusions">{{ inc }}</li>
+      </ul>
+
+      <div class="actions">
+        <a mat-flat-button color="primary" class="btn-quote" [routerLink]="['/request-quotation']" [queryParams]="quoteQueryParams(pkg)">
+          {{ languageService.isMarathi() ? 'कोटेशन मिळवा' : 'Get Quote' }}
+        </a>
+        <a mat-flat-button class="btn-whatsapp" [href]="whatsappUrl(pkg)" target="_blank" rel="noreferrer">
+          {{ languageService.isMarathi() ? 'व्हॉट्सअॅप' : 'WhatsApp' }}
+        </a>
+        <a mat-flat-button class="btn-call" href="tel:+919579858666">
+          {{ languageService.isMarathi() ? 'कॉल करा' : 'Call Now' }}
+        </a>
+      </div>
+    </mat-card>
+  </div>
+</section>

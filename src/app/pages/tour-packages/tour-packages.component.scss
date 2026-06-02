@@ -1,0 +1,133 @@
+.container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  color: #4b5d73;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.package-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-bottom: 1rem;
+}
+
+.package-image-wrap {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.package-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.category-badge {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  background: rgba(11, 58, 105, 0.92);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+}
+
+.vehicle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  background: #eef4fb;
+  border-radius: 10px;
+}
+
+.vehicle-thumb {
+  width: 88px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.vehicle-label {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #5a6b80;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.meta {
+  margin: 0;
+  font-weight: 600;
+  color: #0b3a69;
+}
+
+.locations {
+  margin: 0;
+  color: #4b5d73;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #334155;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.actions a {
+  flex: 1 1 120px;
+  min-height: 42px;
+  font-weight: 600;
+}
+
+.btn-quote {
+  background: #ff8f1f !important;
+  color: #fff !important;
+}
+
+.btn-whatsapp {
+  background: #128c7e !important;
+  color: #fff !important;
+}
+
+.btn-call {
+  background: #1a9f43 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions a {
+    flex: 1 1 100%;
+  }
+}

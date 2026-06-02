@@ -45,7 +45,7 @@ export class ShellComponent {
   showWhatsappPopup = false;
   showInstallPrompt = false;
   mobileMenuOpen = false;
-  inquiryCollapsed = typeof window !== 'undefined' ? window.innerWidth < 768 : false;
+  inquiryCollapsed = false;
 
   private deferredInstallPrompt: (Event & { prompt?: () => Promise<void>; userChoice?: Promise<{ outcome: string }> }) | null =
     null;

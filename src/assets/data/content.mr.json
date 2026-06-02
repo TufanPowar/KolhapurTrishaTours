@@ -66,9 +66,76 @@
     { "name": "ट्रॅव्हलर व्हॅन", "image": "assets/images/vehicle-tempo.webp", "seating": "12+1", "ac": "AC", "luggage": "मोठी जागा", "features": ["ग्रुपसाठी योग्य", "पुशबॅक सीट", "लाँग ट्रिप कम्फर्ट"] }
   ],
   "packages": [
-    { "category": "महाराष्ट्र टूर्स", "name": "कोल्हापूर-महाबळेश्वर ट्रिप", "duration": "3 दिवस / 2 रात्री", "locations": "कोल्हापूर, महाबळेश्वर, पंचगणी", "inclusions": ["कॅब", "ड्रायव्हर भत्ता", "टोल आणि पार्किंग"], "image": "assets/images/package-maharashtra.webp" },
-    { "category": "गोवा टूर्स", "name": "गोवा कोस्टल हॉलिडे", "duration": "4 दिवस / 3 रात्री", "locations": "नॉर्थ गोवा, साऊथ गोवा", "inclusions": ["पिकअप-ड्रॉप", "साईटसीइंग", "सपोर्ट"], "image": "assets/images/package-goa.webp" },
-    { "category": "धार्मिक टूर्स", "name": "स्पिरिच्युअल सर्किट", "duration": "5 दिवस / 4 रात्री", "locations": "कोल्हापूर, पंढरपूर, तुळजापूर", "inclusions": ["कॅब", "रूट प्लॅनिंग", "ड्रायव्हर"], "image": "assets/images/package-religious.webp" }
+    {
+      "category": "महाराष्ट्र टूर्स",
+      "name": "कोल्हापूर-महाबळेश्वर ट्रिप",
+      "duration": "3 दिवस / 2 रात्री",
+      "locations": "कोल्हापूर, महाबळेश्वर, पंचगणी",
+      "inclusions": ["कॅब", "ड्रायव्हर भत्ता", "टोल आणि पार्किंग"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mapro_Garden%2C_Mahabaleshwar.jpg/1280px-Mapro_Garden%2C_Mahabaleshwar.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "गोवा टूर्स",
+      "name": "गोवा कोस्टल हॉलिडे",
+      "duration": "4 दिवस / 3 रात्री",
+      "locations": "नॉर्थ गोवा, साऊथ गोवा",
+      "inclusions": ["पिकअप-ड्रॉप", "साईटसीइंग", "सपोर्ट"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Patnem_Beach_Goa%2C_India.jpg/1280px-Patnem_Beach_Goa%2C_India.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "धार्मिक टूर्स",
+      "name": "स्पिरिच्युअल सर्किट",
+      "duration": "5 दिवस / 4 रात्री",
+      "locations": "कोल्हापूर, पंढरपूर, तुळजापूर",
+      "inclusions": ["कॅब", "रूट प्लॅनिंग", "ड्रायव्हर"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mahalaxmi_Temple%2C_Kolhapur.jpg/1280px-Mahalaxmi_Temple%2C_Kolhapur.jpg",
+      "vehicleType": "5 Seater Sedan",
+      "vehicleImage": "https://images.unsplash.com/photo-1549921296-3a6b0f7f9af3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "गोवा टूर्स",
+      "name": "कोल्हापूर ते गोवा फॅमिली टूर",
+      "duration": "3 दिवस / 2 रात्री",
+      "locations": "कोल्हापूर, नॉर्थ गोवा, साऊथ गोवा",
+      "inclusions": ["कॅब", "टूर सपोर्ट", "साईटसीइंग"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Patnem_Beach_Goa%2C_India.jpg/1280px-Patnem_Beach_Goa%2C_India.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "दक्षिण भारत टूर्स",
+      "name": "कोस्टल कर्नाटक टूर",
+      "duration": "6 दिवस / 5 रात्री",
+      "locations": "गोकर्ण, उडुपी, मुरुदेश्वर",
+      "inclusions": ["कॅब", "ट्रिप प्लॅनिंग", "ड्रायव्हर"],
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "vehicleType": "12 Seater Traveller Van",
+      "vehicleImage": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "महाराष्ट्र टूर्स",
+      "name": "कोकण बीच रिट्रीट",
+      "duration": "4 दिवस / 3 रात्री",
+      "locations": "गणपतीपुळे, रत्नागिरी, तारकर्ली",
+      "inclusions": ["कॅब", "रूट प्लॅन", "ड्रायव्हर भत्ता"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg/1280px-%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "कस्टम टूर्स",
+      "name": "कस्टम फॅमिली ग्रुप पॅकेज",
+      "duration": "योजनेनुसार",
+      "locations": "लवचिक ठिकाणे",
+      "inclusions": ["कस्टम प्लॅन", "कॅब पर्याय", "समर्पित सपोर्ट"],
+      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80",
+      "vehicleType": "17 Seater Traveller Van",
+      "vehicleImage": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+    }
   ],
   "gallery": [
     { "category": "कोल्हापूर पर्यटन", "image": "assets/images/gallery-kolhapur.webp", "title": "महालक्ष्मी मंदिर" },

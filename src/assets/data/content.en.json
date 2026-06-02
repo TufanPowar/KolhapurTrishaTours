@@ -75,13 +75,76 @@
     { "name": "17 Seater Traveller Van", "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80", "seating": "17 Seater", "ac": "AC", "luggage": "Large", "features": ["Best for Groups", "Extra Leg Space", "Tour Ready"] }
   ],
   "packages": [
-    { "category": "Maharashtra Tours", "name": "Kolhapur-Mahabaleshwar Escape", "duration": "3 Days / 2 Nights", "locations": "Kolhapur, Mahabaleshwar, Panchgani", "inclusions": ["Cab", "Driver Allowance", "Toll & Parking"], "image": "assets/images/package-maharashtra.webp" },
-    { "category": "Goa Tours", "name": "Goa Coastal Holiday", "duration": "4 Days / 3 Nights", "locations": "North Goa, South Goa", "inclusions": ["Pickup & Drop", "Sightseeing", "Support"], "image": "assets/images/package-goa.webp" },
-    { "category": "Religious Tours", "name": "Spiritual Maharashtra Circuit", "duration": "5 Days / 4 Nights", "locations": "Kolhapur, Pandharpur, Tuljapur", "inclusions": ["Cab", "Route Planning", "Driver"], "image": "assets/images/package-religious.webp" },
-    { "category": "Goa Tours", "name": "Kolhapur to Goa Family Tour", "duration": "3 Days / 2 Nights", "locations": "Kolhapur, North Goa, South Goa", "inclusions": ["Cab", "Tour Support", "Sightseeing"], "image": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80" },
-    { "category": "South India Tours", "name": "Coastal Karnataka Explorer", "duration": "6 Days / 5 Nights", "locations": "Gokarna, Udupi, Murudeshwar", "inclusions": ["Cab", "Trip Planning", "Driver"], "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" },
-    { "category": "Maharashtra Tours", "name": "Konkan Beach Retreat", "duration": "4 Days / 3 Nights", "locations": "Ganpatipule, Ratnagiri, Tarkarli", "inclusions": ["Cab", "Route Plan", "Driver Allowance"], "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" },
-    { "category": "Customized Tours", "name": "Custom Family Group Package", "duration": "As per plan", "locations": "Flexible Destinations", "inclusions": ["Custom Itinerary", "Cab Options", "Dedicated Support"], "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80" }
+    {
+      "category": "Maharashtra Tours",
+      "name": "Kolhapur-Mahabaleshwar Escape",
+      "duration": "3 Days / 2 Nights",
+      "locations": "Kolhapur, Mahabaleshwar, Panchgani",
+      "inclusions": ["Cab", "Driver Allowance", "Toll & Parking"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mapro_Garden%2C_Mahabaleshwar.jpg/1280px-Mapro_Garden%2C_Mahabaleshwar.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "Goa Tours",
+      "name": "Goa Coastal Holiday",
+      "duration": "4 Days / 3 Nights",
+      "locations": "North Goa, South Goa",
+      "inclusions": ["Pickup & Drop", "Sightseeing", "Support"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Patnem_Beach_Goa%2C_India.jpg/1280px-Patnem_Beach_Goa%2C_India.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "Religious Tours",
+      "name": "Spiritual Maharashtra Circuit",
+      "duration": "5 Days / 4 Nights",
+      "locations": "Kolhapur, Pandharpur, Tuljapur",
+      "inclusions": ["Cab", "Route Planning", "Driver"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mahalaxmi_Temple%2C_Kolhapur.jpg/1280px-Mahalaxmi_Temple%2C_Kolhapur.jpg",
+      "vehicleType": "5 Seater Sedan",
+      "vehicleImage": "https://images.unsplash.com/photo-1549921296-3a6b0f7f9af3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "Goa Tours",
+      "name": "Kolhapur to Goa Family Tour",
+      "duration": "3 Days / 2 Nights",
+      "locations": "Kolhapur, North Goa, South Goa",
+      "inclusions": ["Cab", "Tour Support", "Sightseeing"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Patnem_Beach_Goa%2C_India.jpg/1280px-Patnem_Beach_Goa%2C_India.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "South India Tours",
+      "name": "Coastal Karnataka Explorer",
+      "duration": "6 Days / 5 Nights",
+      "locations": "Gokarna, Udupi, Murudeshwar",
+      "inclusions": ["Cab", "Trip Planning", "Driver"],
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "vehicleType": "12 Seater Traveller Van",
+      "vehicleImage": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "Maharashtra Tours",
+      "name": "Konkan Beach Retreat",
+      "duration": "4 Days / 3 Nights",
+      "locations": "Ganpatipule, Ratnagiri, Tarkarli",
+      "inclusions": ["Cab", "Route Plan", "Driver Allowance"],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg/1280px-%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg",
+      "vehicleType": "7 Seater SUV",
+      "vehicleImage": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "category": "Customized Tours",
+      "name": "Custom Family Group Package",
+      "duration": "As per plan",
+      "locations": "Flexible Destinations",
+      "inclusions": ["Custom Itinerary", "Cab Options", "Dedicated Support"],
+      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80",
+      "vehicleType": "17 Seater Traveller Van",
+      "vehicleImage": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+    }
   ],
   "gallery": [
     { "category": "Kolhapur Tourism", "image": "assets/images/gallery-kolhapur.webp", "title": "Mahalaxmi Temple View" },

@@ -13,39 +13,39 @@
   flex-wrap: wrap;
 }
 
-.hero-search {
-  margin: 1.25rem auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.cta-row a.cta-call,
+.cta-row a.cta-whatsapp {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
-  max-width: 980px;
+  padding: 0 1.25rem;
+  min-height: 42px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff !important;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.hero-search input {
-  flex: 1 1 200px;
-  min-width: 160px;
-  border: 0;
-  border-radius: 12px;
-  padding: 0.85rem 0.95rem;
-  background: rgba(255, 255, 255, 0.95);
-  color: #0b3a69;
-  outline: none;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+.cta-call {
+  background: #1a9f43;
 }
 
-.hero-search input[type='date'] {
-  padding: 0.72rem 0.95rem;
+.cta-call:hover {
+  background: #158a3a;
 }
 
-.hero-search button {
-  flex: 0 0 auto;
-  border-radius: 12px;
-  padding: 0 1.1rem;
-  height: 46px;
-  align-self: center;
-  white-space: nowrap;
+.cta-whatsapp {
+  background: #128c7e;
+}
+
+.cta-whatsapp:hover {
+  background: #0f7a6e;
+}
+
+.cta-book {
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -66,12 +66,9 @@
     margin: 0;
   }
 
-  .hero-search input,
-  .hero-search button {
+  .cta-row a {
     width: 100%;
-    flex: 0 0 100%;
-    min-width: 0;
-    height: auto;
+    margin: 0;
   }
 
   .section {

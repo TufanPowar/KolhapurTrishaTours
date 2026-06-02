@@ -1,59 +1,57 @@
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { LanguageService } from '../../core/services/language.service';
+import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
-import { SiteContent } from '../../core/models/content.model';
+import { SiteContent, TourPackage } from '../../core/models/content.model';
 import { ContentService } from '../../core/services/content.service';
+import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
+import { BRAND_NAME } from '../../core/validators/form-validators';
 
 @Component({
   selector: 'app-tour-packages',
   standalone: true,
-  imports: [NgIf, NgFor, AsyncPipe, MatCardModule, MatButtonModule],
-  template: `<section class="container" *ngIf="content$ | async as content">
-    <h1>{{ languageService.isMarathi() ? 'टूर पॅकेजेस' : 'Tour Packages' }}</h1>
-    <div class="grid">
-      <mat-card *ngFor="let pkg of content.packages">
-        <img [src]="pkg.image" [alt]="pkg.name" loading="lazy" />
-        <h3>{{ pkg.name }}</h3>
-        <p>{{ pkg.category }} | {{ pkg.duration }}</p>
-        <p>{{ pkg.locations }}</p>
-        <ul><li *ngFor="let inc of pkg.inclusions">{{ inc }}</li></ul>
-        <div class="actions">
-          <a
-            mat-stroked-button
-            color="primary"
-            [href]="'https://wa.me/919579858666?text=Hello%20Trisha%20Tours,%20I%20need%20details%20for%20package:%20' + pkg.name"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {{ languageService.isMarathi() ? 'व्हॉट्सअॅप चौकशी' : 'WhatsApp Inquiry' }}
-          </a>
-          <a
-            mat-button
-            href="https://www.facebook.com/sharer/sharer.php?u=https://trishatourskolhapur.com/tour-packages"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {{ languageService.isMarathi() ? 'शेअर' : 'Share' }}
-          </a>
-        </div>
-      </mat-card>
-    </div>
-  </section>`,
-  styles: [
-    '.container{padding:2rem 1rem;} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;} img{width:100%;border-radius:8px;aspect-ratio:16/10;object-fit:cover;} .actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem;}'
-  ]
+  imports: [NgIf, NgFor, AsyncPipe, MatCardModule, MatButtonModule, MatIconModule, RouterLink],
+  templateUrl: './tour-packages.component.html',
+  styleUrl: './tour-packages.component.scss'
 })
 export class TourPackagesComponent implements OnInit {
   readonly languageService = inject(LanguageService);
   readonly content$: Observable<SiteContent>;
-  constructor(private readonly contentService: ContentService, private readonly seoService: SeoService) {
+
+  constructor(
+    private readonly contentService: ContentService,
+    private readonly seoService: SeoService
+  ) {
     this.content$ = this.contentService.content;
   }
+
   ngOnInit(): void {
     this.content$.subscribe((content) => this.seoService.update({ ...content.meta.packages, path: '/tour-packages' }));
+  }
+
+  quoteQueryParams(pkg: TourPackage): Record<string, string | number> {
+    const destination = pkg.locations.split(',')[0]?.trim() || pkg.name;
+    return {
+      pickup: 'Kolhapur',
+      destination,
+      vehicleType: pkg.vehicleType,
+      days: this.extractDays(pkg.duration)
+    };
+  }
+
+  whatsappUrl(pkg: TourPackage): string {
+    const text = encodeURIComponent(
+      `Hello ${BRAND_NAME}, I am interested in package: ${pkg.name} (${pkg.vehicleType}). Please share quotation.`
+    );
+    return `https://wa.me/919579858666?text=${text}`;
+  }
+
+  private extractDays(duration: string): number {
+    const match = duration.match(/(\d+)\s*Days?/i);
+    return match ? Number(match[1]) : 3;
   }
 }

@@ -30,6 +30,8 @@ export interface TourPackage {
   locations: string;
   inclusions: string[];
   image: string;
+  vehicleType: string;
+  vehicleImage: string;
 }
 
 export interface SiteContent {
