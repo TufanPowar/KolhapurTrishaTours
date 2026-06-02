@@ -1,0 +1,148 @@
+{
+  "configVersion": 1,
+  "timestamp": 1780399088507,
+  "index": "/KolhapurTrishaTours/index.csr.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/KolhapurTrishaTours/chunk-73FHHNPA.js",
+        "/KolhapurTrishaTours/chunk-ACPJEWLH.js",
+        "/KolhapurTrishaTours/chunk-BVGLWLDT.js",
+        "/KolhapurTrishaTours/chunk-CFODFXW3.js",
+        "/KolhapurTrishaTours/chunk-F3CRMQ3U.js",
+        "/KolhapurTrishaTours/chunk-FRD4HWCQ.js",
+        "/KolhapurTrishaTours/chunk-FVA3KDCP.js",
+        "/KolhapurTrishaTours/chunk-GDKDBGIQ.js",
+        "/KolhapurTrishaTours/chunk-ITJ463LS.js",
+        "/KolhapurTrishaTours/chunk-JH4HZAUJ.js",
+        "/KolhapurTrishaTours/chunk-K7SAISGA.js",
+        "/KolhapurTrishaTours/chunk-LJAMH4SV.js",
+        "/KolhapurTrishaTours/chunk-N3BO7FPM.js",
+        "/KolhapurTrishaTours/chunk-QHSG5Q5K.js",
+        "/KolhapurTrishaTours/chunk-R55Y4TOZ.js",
+        "/KolhapurTrishaTours/chunk-RLMC2ZDH.js",
+        "/KolhapurTrishaTours/chunk-UDWN5TMY.js",
+        "/KolhapurTrishaTours/chunk-VCZZ2QXF.js",
+        "/KolhapurTrishaTours/chunk-VVDJD24J.js",
+        "/KolhapurTrishaTours/chunk-W4AYV7T3.js",
+        "/KolhapurTrishaTours/chunk-WIEKYSRZ.js",
+        "/KolhapurTrishaTours/chunk-Y3Z6PIR7.js",
+        "/KolhapurTrishaTours/chunk-Z2RRAQIX.js",
+        "/KolhapurTrishaTours/chunk-ZKOWZGIP.js",
+        "/KolhapurTrishaTours/favicon.svg",
+        "/KolhapurTrishaTours/index.csr.html",
+        "/KolhapurTrishaTours/index.html",
+        "/KolhapurTrishaTours/main-62VYBD53.js",
+        "/KolhapurTrishaTours/manifest.webmanifest",
+        "/KolhapurTrishaTours/styles-TJFBVPYH.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/KolhapurTrishaTours/icons/icon-128x128.png",
+        "/KolhapurTrishaTours/icons/icon-144x144.png",
+        "/KolhapurTrishaTours/icons/icon-152x152.png",
+        "/KolhapurTrishaTours/icons/icon-192x192.png",
+        "/KolhapurTrishaTours/icons/icon-384x384.png",
+        "/KolhapurTrishaTours/icons/icon-512x512.png",
+        "/KolhapurTrishaTours/icons/icon-72x72.png",
+        "/KolhapurTrishaTours/icons/icon-96x96.png"
+      ],
+      "patterns": [
+        "https:\\/\\/images\\.unsplash\\.com\\/.*",
+        "https:\\/\\/upload\\.wikimedia\\.org\\/.*",
+        "https:\\/\\/commons\\.wikimedia\\.org\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "external-images",
+      "patterns": [
+        "https:\\/\\/images\\.unsplash\\.com\\/.*",
+        "https:\\/\\/upload\\.wikimedia\\.org\\/.*",
+        "https:\\/\\/commons\\.wikimedia\\.org\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 30,
+      "maxAge": 2592000000,
+      "timeoutMs": 10000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/KolhapurTrishaTours/chunk-73FHHNPA.js": "0574ea740d2b6da7551b9f51742b0e75852534b4",
+    "/KolhapurTrishaTours/chunk-ACPJEWLH.js": "f3d568e2c174127fd4383a1336318f61fa9e278e",
+    "/KolhapurTrishaTours/chunk-BVGLWLDT.js": "60de81028c4edf817838bfe4f7baa56d2fe634dd",
+    "/KolhapurTrishaTours/chunk-CFODFXW3.js": "17dd29df2af3f5bf5b17d73de668807a49a246c3",
+    "/KolhapurTrishaTours/chunk-F3CRMQ3U.js": "8ffebda463cd5e9a39d1f6b0a0348d9693056bc3",
+    "/KolhapurTrishaTours/chunk-FRD4HWCQ.js": "9973f71e3123cecd419bd5ad2cc2361379986c75",
+    "/KolhapurTrishaTours/chunk-FVA3KDCP.js": "958cb7e62d4bcfe6c6af024289ed0421369ca8e7",
+    "/KolhapurTrishaTours/chunk-GDKDBGIQ.js": "fa3b1b96218194b7999ec71033c1d05eaea07d98",
+    "/KolhapurTrishaTours/chunk-ITJ463LS.js": "6a4af8397b31fdb397d6b5136515a3260633c991",
+    "/KolhapurTrishaTours/chunk-JH4HZAUJ.js": "95f7d6983eadb3ab7022d93ea0e816b2df3e077d",
+    "/KolhapurTrishaTours/chunk-K7SAISGA.js": "7f705fb424a00a688b5d001b8eeafe44558e37e6",
+    "/KolhapurTrishaTours/chunk-LJAMH4SV.js": "cce23356d7f17cd83ef4daa2f27e2110171676f8",
+    "/KolhapurTrishaTours/chunk-N3BO7FPM.js": "3f0cc1ae43610ae0b5baf22b80362ceedacdbc9f",
+    "/KolhapurTrishaTours/chunk-QHSG5Q5K.js": "84d156793488da4815e63915232456723a8ed0f7",
+    "/KolhapurTrishaTours/chunk-R55Y4TOZ.js": "087cb197f2a579445b3800cfe05c75cad92bf4bd",
+    "/KolhapurTrishaTours/chunk-RLMC2ZDH.js": "55d302f03e778c77d0ff325089b6cf59a069a0c1",
+    "/KolhapurTrishaTours/chunk-UDWN5TMY.js": "47593f24df8193adb54632c5f072a31f457b1be3",
+    "/KolhapurTrishaTours/chunk-VCZZ2QXF.js": "ffe2f8f87654f46b1f9ae026f76fa207a69fc37d",
+    "/KolhapurTrishaTours/chunk-VVDJD24J.js": "1909e4daf3658b79de6c396f31ad1dcba5fe202d",
+    "/KolhapurTrishaTours/chunk-W4AYV7T3.js": "5565705d5850a826304990d9571a40dee830859a",
+    "/KolhapurTrishaTours/chunk-WIEKYSRZ.js": "57826e578e5d1eaa885578f79683ef71dbb58851",
+    "/KolhapurTrishaTours/chunk-Y3Z6PIR7.js": "5b83b72e79cfe492e01a8ca62e427fd96c98d48f",
+    "/KolhapurTrishaTours/chunk-Z2RRAQIX.js": "1f121c1e95e5f161326657b18e047d1d06e763c9",
+    "/KolhapurTrishaTours/chunk-ZKOWZGIP.js": "7cdb2a1d6d177a371f27ca4905015eab066c7368",
+    "/KolhapurTrishaTours/favicon.svg": "a722865675cf3d03f8a1b55bfdfad7e9fdbf3215",
+    "/KolhapurTrishaTours/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/KolhapurTrishaTours/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/KolhapurTrishaTours/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/KolhapurTrishaTours/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/KolhapurTrishaTours/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/KolhapurTrishaTours/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/KolhapurTrishaTours/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/KolhapurTrishaTours/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/KolhapurTrishaTours/index.csr.html": "dd3521a8695a5db2f607d7051c0d75a92b1e35df",
+    "/KolhapurTrishaTours/index.html": "a7e87ad69273c6025012e3d5496e485e0c6a1dda",
+    "/KolhapurTrishaTours/main-62VYBD53.js": "fee257a6fd2e1a2058040cd2d69c906cc7ba3284",
+    "/KolhapurTrishaTours/manifest.webmanifest": "df90ce97245264d75e09d71cc68451e6bdf715db",
+    "/KolhapurTrishaTours/styles-TJFBVPYH.css": "0160cb4484607b6521152c13a27f318544cca7c8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
