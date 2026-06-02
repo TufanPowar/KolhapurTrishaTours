@@ -23,14 +23,18 @@
       "updateMode": "prefetch",
       "resources": {
         "files": ["/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"],
-        "urls": ["https://images.unsplash.com/**"]
+        "urls": ["https://images.unsplash.com/**", "https://upload.wikimedia.org/**", "https://commons.wikimedia.org/**"]
       }
     }
   ],
   "dataGroups": [
     {
-      "name": "unsplash-images",
-      "urls": ["https://images.unsplash.com/**"],
+      "name": "external-images",
+      "urls": [
+        "https://images.unsplash.com/**",
+        "https://upload.wikimedia.org/**",
+        "https://commons.wikimedia.org/**"
+      ],
       "cacheConfig": {
         "maxSize": 30,
         "maxAge": "30d",

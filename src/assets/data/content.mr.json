@@ -25,14 +25,14 @@
   "hero": { "title": "कोल्हापूरमधील तुमचा विश्वासू प्रवास भागीदार", "subtitle": "कॅब रेंटल, फॅमिली टूर आणि ऑल इंडिया पॅकेजेस.", "ctaQuote": "कोटेशन घ्या", "ctaCall": "आत्ता कॉल करा", "ctaWhatsapp": "व्हॉट्सअॅप चौकशी" },
   "whyChooseUs": ["विश्वासार्ह सेवा", "प्रोफेशनल ड्रायव्हर्स", "परवडणारे दर", "24x7 सपोर्ट", "सुरक्षित प्रवास", "ऑल इंडिया टूर"],
   "destinations": [
-    { "name": "कोल्हापूर", "image": "https://images.unsplash.com/photo-1572785262052-c4f9c5a3ef5f?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "महाबळेश्वर", "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "गोवा", "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "पुणे", "image": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "मुंबई", "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "कोकण", "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "गणपतीपुळे", "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" },
-    { "name": "तारकर्ली", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" }
+    { "name": "कोल्हापूर", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mahalaxmi_Temple%2C_Kolhapur.jpg/1280px-Mahalaxmi_Temple%2C_Kolhapur.jpg" },
+    { "name": "महाबळेश्वर", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mapro_Garden%2C_Mahabaleshwar.jpg/1280px-Mapro_Garden%2C_Mahabaleshwar.jpg" },
+    { "name": "गोवा", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Patnem_Beach_Goa%2C_India.jpg/1280px-Patnem_Beach_Goa%2C_India.jpg" },
+    { "name": "पुणे", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Shaniwar_Wada%2C_Pune.jpg/1280px-Shaniwar_Wada%2C_Pune.jpg" },
+    { "name": "मुंबई", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_Gateway_of_India.jpg/1280px-The_Gateway_of_India.jpg" },
+    { "name": "कोकण", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kelwa_beach_%2C_Palghar_%2C_Maharashtra_%2C_India.jpeg/1280px-Kelwa_beach_%2C_Palghar_%2C_Maharashtra_%2C_India.jpeg" },
+    { "name": "गणपतीपुळे", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg/1280px-%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%80%E0%A4%AA%E0%A5%81%E0%A4%B3%E0%A5%87_%E0%A4%B8%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE.jpg" },
+    { "name": "तारकर्ली", "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tarkarli_Photo_by_Sandeep_Wairkar_3.jpg?width=1280" }
   ],
   "cabCategories": ["सेडान", "हॅचबॅक", "एसयूव्ही", "लक्झरी कार", "ट्रॅव्हलर व्हॅन", "मिनी बस"],
   "servicesOverview": ["एअरपोर्ट पिकअप-ड्रॉप", "रेल्वे स्टेशन पिकअप", "लोकल साईटसीइंग", "आऊटस्टेशन ट्रिप्स", "कॉर्पोरेट ट्रॅव्हल", "फॅमिली टूर्स", "धार्मिक टूर्स", "वेडिंग ट्रान्सपोर्ट", "शाळा/कॉलेज ट्रिप्स", "टुरिस्ट पॅकेजेस"],
