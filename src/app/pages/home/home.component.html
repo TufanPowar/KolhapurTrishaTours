@@ -20,7 +20,13 @@
     <h2>{{ content.companyName === 'त्रिशा टूर्स अँड कॅब सर्व्हिसेस' ? 'लोकप्रिय ठिकाणे' : 'Popular Destinations' }}</h2>
     <div class="grid">
       <mat-card *ngFor="let destination of content.destinations" data-aos="zoom-in-up">
-        <img [src]="destination.image" [alt]="destination.name" loading="lazy" />
+        <img
+          [src]="destination.image"
+          [alt]="destination.name + ' travel destination'"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer-when-downgrade"
+        />
         <h3>{{ destination.name }}</h3>
       </mat-card>
     </div>

@@ -34,12 +34,14 @@ mat-card:hover {
   border-color: #d7e7ff;
 }
 
-img {
+mat-card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 0.5rem;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  background: #e8eef5;
+  min-height: 140px;
 }
 
 .emergency {
