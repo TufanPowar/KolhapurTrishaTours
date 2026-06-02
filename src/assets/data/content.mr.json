@@ -1,0 +1,87 @@
+{
+  "companyName": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस",
+  "tagLine": "कोल्हापूरहून प्रीमियम कॅब आणि टूर सेवा",
+  "meta": {
+    "home": { "title": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस | कोल्हापूर कॅब व टूर", "description": "कोल्हापूरमधून विश्वासार्ह कॅब सेवा आणि टूर पॅकेजेस.", "keywords": "Kolhapur Tours, Kolhapur Cab Service, Taxi Service Kolhapur" },
+    "about": { "title": "आमच्याबद्दल | त्रिशा टूर्स", "description": "आमचे ध्येय, दृष्टी आणि सेवा.", "keywords": "about trisha tours" },
+    "services": { "title": "सेवा | त्रिशा टूर्स", "description": "कॅब, टूर, कॉर्पोरेट आणि इव्हेंट ट्रान्सपोर्ट.", "keywords": "services kolhapur" },
+    "fleet": { "title": "फ्लीट | त्रिशा टूर्स", "description": "आमची वाहन श्रेणी पहा.", "keywords": "fleet kolhapur" },
+    "packages": { "title": "टूर पॅकेजेस | त्रिशा टूर्स", "description": "महाराष्ट्र, गोवा आणि धार्मिक पॅकेजेस.", "keywords": "tour packages kolhapur" },
+    "quotation": { "title": "कोटेशन विनंती | त्रिशा टूर्स", "description": "आपली प्रवास चौकशी पाठवा.", "keywords": "quotation request" },
+    "gallery": { "title": "गॅलरी | त्रिशा टूर्स", "description": "आमच्या टूर आणि वाहनांचे फोटो.", "keywords": "gallery travel" },
+    "contact": { "title": "संपर्क | त्रिशा टूर्स", "description": "बुकिंगसाठी संपर्क करा.", "keywords": "contact kolhapur travel" }
+  },
+  "nav": [
+    { "label": "मुख्यपृष्ठ", "path": "/" },
+    { "label": "आमच्याबद्दल", "path": "/about" },
+    { "label": "सेवा", "path": "/services" },
+    { "label": "वाहने", "path": "/fleet" },
+    { "label": "पॅकेजेस", "path": "/tour-packages" },
+    { "label": "कोटेशन", "path": "/request-quotation" },
+    { "label": "गॅलरी", "path": "/gallery" },
+    { "label": "संपर्क", "path": "/contact" },
+    { "label": "ब्लॉग", "path": "/blog" }
+  ],
+  "hero": { "title": "कोल्हापूरमधील तुमचा विश्वासू प्रवास भागीदार", "subtitle": "कॅब रेंटल, फॅमिली टूर आणि ऑल इंडिया पॅकेजेस.", "ctaQuote": "कोटेशन घ्या", "ctaCall": "आत्ता कॉल करा", "ctaWhatsapp": "व्हॉट्सअॅप चौकशी" },
+  "whyChooseUs": ["विश्वासार्ह सेवा", "प्रोफेशनल ड्रायव्हर्स", "परवडणारे दर", "24x7 सपोर्ट", "सुरक्षित प्रवास", "ऑल इंडिया टूर"],
+  "destinations": [
+    { "name": "कोल्हापूर", "image": "https://images.unsplash.com/photo-1572785262052-c4f9c5a3ef5f?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "महाबळेश्वर", "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "गोवा", "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "पुणे", "image": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "मुंबई", "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "कोकण", "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "गणपतीपुळे", "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" },
+    { "name": "तारकर्ली", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" }
+  ],
+  "cabCategories": ["सेडान", "हॅचबॅक", "एसयूव्ही", "लक्झरी कार", "ट्रॅव्हलर व्हॅन", "मिनी बस"],
+  "servicesOverview": ["एअरपोर्ट पिकअप-ड्रॉप", "रेल्वे स्टेशन पिकअप", "लोकल साईटसीइंग", "आऊटस्टेशन ट्रिप्स", "कॉर्पोरेट ट्रॅव्हल", "फॅमिली टूर्स", "धार्मिक टूर्स", "वेडिंग ट्रान्सपोर्ट", "शाळा/कॉलेज ट्रिप्स", "टुरिस्ट पॅकेजेस"],
+  "testimonials": [{ "name": "प्रिया पाटील", "comment": "वेळेवर आणि सुरक्षित सेवा." }, { "name": "रोहित जाधव", "comment": "फॅमिलीसाठी उत्तम गोवा टूर." }, { "name": "नेहा कुलकर्णी", "comment": "पारदर्शक किंमत आणि उत्तम प्लॅनिंग." }],
+  "faqs": [
+    { "question": "कॅब कशी बुक करायची?", "answer": "कॉल, व्हॉट्सअॅप किंवा कोटेशन फॉर्म वापरा." },
+    { "question": "आऊटस्टेशन ट्रिप देता का?", "answer": "हो, ऑल इंडिया सेवा उपलब्ध आहे." },
+    { "question": "ड्रायव्हर मिळतो का?", "answer": "हो, प्रोफेशनल ड्रायव्हर उपलब्ध आहे." },
+    { "question": "कोणती शहरे कव्हर करता?", "answer": "कोल्हापूर आणि भारतातील प्रमुख शहरे." },
+    { "question": "कोटेशन कसे मागवू?", "answer": "कोटेशन पेज किंवा व्हॉट्सअॅप वापरा." }
+  ],
+  "trustIndicators": ["प्रोफेशनल ड्रायव्हर्स", "स्वच्छ वाहने", "वेळेवर सेवा", "सुरक्षित प्रवास", "व्हेरिफाइड ड्रायव्हर्स"],
+  "emergencyBanner": "24x7 आपत्कालीन प्रवास सहाय्य उपलब्ध",
+  "about": {
+    "intro": "त्रिशा टूर्स अँड कॅब सर्व्हिसेस ही कोल्हापूरमधील ग्राहक-केंद्रित ट्रॅव्हल सेवा आहे.",
+    "mission": "ध्येय: परवडणारी आणि विश्वासार्ह सेवा देणे.",
+    "vision": "दृष्टी: पश्चिम महाराष्ट्रातील सर्वात विश्वासू ट्रॅव्हल पार्टनर बनणे.",
+    "experience": "अनुभव: वर्षानुवर्षे समाधानकारक प्रवास सेवा.",
+    "areas": "सेवा क्षेत्र: कोल्हापूर, महाराष्ट्र आणि ऑल इंडिया.",
+    "commitment": "वचनबद्धता: सुरक्षित प्रवास, स्वच्छ वाहने आणि तत्पर सपोर्ट."
+  },
+  "services": {
+    "cabRental": ["तासावर भाडे", "दिवसावर भाडे", "आठवड्याचे भाडे"],
+    "tours": ["महाराष्ट्र टूर्स", "गोवा टूर्स", "दक्षिण भारत टूर्स", "उत्तर भारत टूर्स", "धार्मिक टूर्स"],
+    "corporate": ["कर्मचारी वाहतूक", "बिझनेस ट्रॅव्हल"],
+    "eventTransportation": ["लग्न समारंभ", "कौटुंबिक कार्यक्रम", "ग्रुप ट्रॅव्हल"]
+  },
+  "vehicles": [
+    { "name": "सेडान", "image": "assets/images/vehicle-sedan.webp", "seating": "4+1", "ac": "AC", "luggage": "2 बॅग", "features": ["आरामदायी सीट", "म्युझिक सिस्टम", "स्वच्छ इंटिरियर"] },
+    { "name": "एसयूव्ही", "image": "assets/images/vehicle-suv.webp", "seating": "6+1", "ac": "AC", "luggage": "4 बॅग", "features": ["मोठी केबिन", "आरामदायी राईड", "टूर रेडी"] },
+    { "name": "ट्रॅव्हलर व्हॅन", "image": "assets/images/vehicle-tempo.webp", "seating": "12+1", "ac": "AC", "luggage": "मोठी जागा", "features": ["ग्रुपसाठी योग्य", "पुशबॅक सीट", "लाँग ट्रिप कम्फर्ट"] }
+  ],
+  "packages": [
+    { "category": "महाराष्ट्र टूर्स", "name": "कोल्हापूर-महाबळेश्वर ट्रिप", "duration": "3 दिवस / 2 रात्री", "locations": "कोल्हापूर, महाबळेश्वर, पंचगणी", "inclusions": ["कॅब", "ड्रायव्हर भत्ता", "टोल आणि पार्किंग"], "image": "assets/images/package-maharashtra.webp" },
+    { "category": "गोवा टूर्स", "name": "गोवा कोस्टल हॉलिडे", "duration": "4 दिवस / 3 रात्री", "locations": "नॉर्थ गोवा, साऊथ गोवा", "inclusions": ["पिकअप-ड्रॉप", "साईटसीइंग", "सपोर्ट"], "image": "assets/images/package-goa.webp" },
+    { "category": "धार्मिक टूर्स", "name": "स्पिरिच्युअल सर्किट", "duration": "5 दिवस / 4 रात्री", "locations": "कोल्हापूर, पंढरपूर, तुळजापूर", "inclusions": ["कॅब", "रूट प्लॅनिंग", "ड्रायव्हर"], "image": "assets/images/package-religious.webp" }
+  ],
+  "gallery": [
+    { "category": "कोल्हापूर पर्यटन", "image": "assets/images/gallery-kolhapur.webp", "title": "महालक्ष्मी मंदिर" },
+    { "category": "वाहन", "image": "assets/images/gallery-vehicle.webp", "title": "स्वच्छ फ्लीट" },
+    { "category": "ग्राहक टूर", "image": "assets/images/gallery-customer.webp", "title": "आनंदी कुटुंब टूर" },
+    { "category": "ऑफिस", "image": "assets/images/gallery-office.webp", "title": "त्रिशा टूर्स ऑफिस" }
+  ],
+  "social": { "facebook": "#", "instagram": "#", "youtube": "#", "googleBusiness": "#" },
+  "contact": {
+    "phonePrimary": "+91 9579858666",
+    "phoneSecondary": "+91 8698863927",
+    "whatsapp": "+91 9579858666",
+    "email": "info@trishatours.com",
+    "address": "कोल्हापूर, महाराष्ट्र, भारत"
+  }
+}

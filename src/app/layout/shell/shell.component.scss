@@ -1,0 +1,163 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background: #0b3a69;
+  color: #fff;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.main-content {
+  min-height: calc(100vh - 130px);
+}
+
+.sticky-inquiry {
+  position: sticky;
+  top: 64px;
+  z-index: 9;
+  background: #ff8f1f;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sticky-inquiry form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sticky-inquiry input {
+  border: 0;
+  border-radius: 4px;
+  padding: 0.45rem 0.55rem;
+}
+
+.sticky-inquiry small {
+  font-weight: 600;
+}
+
+.footer {
+  background: #0a2540;
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.install-banner {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  z-index: 55;
+  background: #0b3a69;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.floating {
+  position: fixed;
+  right: 0.9rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 0.8rem;
+  color: #fff;
+  z-index: 50;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  font-weight: 600;
+  font-size: 0.83rem;
+}
+
+.call {
+  bottom: 12.8rem;
+  background: #1a9f43;
+}
+
+.quote {
+  bottom: 9.2rem;
+  background: #ff8f1f;
+}
+
+.whatsapp {
+  bottom: 5.5rem;
+  background: #25d366;
+}
+
+.share {
+  bottom: 1.8rem;
+  background: #1877f2;
+}
+
+.whatsapp-popup {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  max-width: 320px;
+  background: #ffffff;
+  border: 1px solid #dce7f5;
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  padding: 0.9rem;
+}
+
+.whatsapp-popup p {
+  margin: 0 0 0.5rem 0;
+  color: #0a2540;
+}
+
+.whatsapp-popup a {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.close-btn {
+  float: right;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
