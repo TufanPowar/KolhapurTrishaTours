@@ -1,0 +1,1 @@
+import{V as i,a as r}from"./chunk-E5MBXTM3.js";var e=class o{track(t,n={}){let a=window;a.dataLayer=a.dataLayer??[],a.dataLayer.push(r({event:t},n)),a.gtag&&a.gtag("event",t,n),a.fbq&&a.fbq("trackCustom",t,n)}static \u0275fac=function(n){return new(n||o)};static \u0275prov=i({token:o,factory:o.\u0275fac,providedIn:"root"})};export{e as a};
